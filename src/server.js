@@ -33,6 +33,6 @@ app.get("*", (req, res) => {
 });
 
 //CONNECT THE SERVER
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("The server is connected!");
 });
